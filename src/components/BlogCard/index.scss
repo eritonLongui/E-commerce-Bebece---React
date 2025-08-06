@@ -1,0 +1,29 @@
+.blog-card {
+    min-width: 361px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    figure {
+        width: 361px;
+        height: 241px;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 300;
+        color: var(--grey);
+    }
+
+    a {
+        font-size: 12px;
+        font-weight: 300;
+        text-decoration: none;
+        color: var(--dark);
+    }
+}

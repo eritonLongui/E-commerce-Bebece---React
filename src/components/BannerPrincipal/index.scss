@@ -1,0 +1,29 @@
+.banner-principal {
+    position: relative;
+
+    figure {
+        width: 393px;
+        // overflow: hidden;
+        display: flex;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    div {
+        width: 150px;
+        padding: 12px 24px;
+        border: 1px solid white;
+        background-color: rgba($color: #FFFFFF, $alpha: .2);
+        position: absolute;
+        bottom: 32px;
+        left: 20px;
+
+        a {
+             color: var(--white);
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.status-bar {
+    height: 53px;
+    width: 393px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    position: fixed;
+
+    div {
+        width: 125px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cam {
+        height: 37px;
+        background-color: var(--dark);
+        border-radius: 18px;
+    }
+
+    .status {
+        gap: 8px;
+    }
+}

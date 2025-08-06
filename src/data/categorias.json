@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "nome": "Botas",
+        "imagem": "./static/images/categorias/banner-botas.png"
+    },
+    {
+        "id": 2,
+        "nome": "Scarpins",
+        "imagem": "./static/images/categorias/banner-scarpins.png"
+    },
+    {
+        "id": 3,
+        "nome": "Sapatilhas",
+        "imagem": "./static/images/categorias/banner-sapatilhas.png"
+    },
+    {
+        "id": 4,
+        "nome": "Sandalias",
+        "imagem": "./static/images/categorias/banner-sandalias.png"
+    }
+]

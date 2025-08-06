@@ -1,0 +1,10 @@
+.slider-categorias {
+    background-color: var(--white);
+    padding: 32px 16px 48px;
+    
+    > div {
+        margin-top: 16px;
+        display: flex;
+        gap: 12px;
+    }
+}

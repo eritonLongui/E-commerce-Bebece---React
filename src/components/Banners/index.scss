@@ -1,0 +1,9 @@
+.banners {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    img {
+        width: 100%;
+    }
+}

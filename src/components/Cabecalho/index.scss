@@ -1,0 +1,28 @@
+.cabecalho {
+    height: 55px;
+    width: 393px;
+    padding: 20px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    position: fixed;
+    top: 53px;
+    z-index: 1;
+
+    nav {
+        display: flex;
+        gap: 16px;
+    }
+
+    div {
+        display: flex;
+        gap: 1px;
+
+        p {
+            font-size: 10px;
+            font-weight: 400;
+            padding: 2px;
+        }
+    }
+}
