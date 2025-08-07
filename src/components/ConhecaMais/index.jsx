@@ -1,3 +1,4 @@
+import Slider from 'react-slick';
 import BlogCard from '../BlogCard';
 import './index.scss'
 
@@ -23,23 +24,33 @@ const blogPage = [
 ];
 
 function ConhecaMais() {
+    const settings = {
+        dots: true,
+        infinite: false,
+        autoplay: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+    };
+
     return (
         <section className="conheca-mais">
-            {blogPage.map((page) => (
+            <div className="fixo">
+                <h2>Conheça mais</h2>
+                <p>Fique por dentro de tudo o que acontece na Bebecê.</p>
+            </div>
+            <Slider {...settings}>
+                {blogPage.map((page) => (
                     <div className="card">
-                        <div className="fixo">
-                            <h2>Conheça mais</h2>
-                            <p>Fique por dentro de tudo o que acontece na Bebecê.</p>
-                        </div>
                         <BlogCard
                             key={page.id}
                             imagem={page.imagem}
                             titulo={page.titulo}
                             descricao={page.descricao}
                         />
-                        <div className="dots"></div>
                     </div>
-            ))}
+                ))}
+            </Slider>
         </section>
     )
 }

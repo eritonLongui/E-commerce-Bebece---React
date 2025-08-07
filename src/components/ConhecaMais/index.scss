@@ -1,20 +1,32 @@
 .conheca-mais {
-    padding: 32px 16px;
+    padding: 32px 16px 62px;
     display: flex;
+    flex-direction: column;
     gap: 32px;
     background-color: var(--white);
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-
+    
     .fixo {
         p {
             font-size: 12px;
             font-style: italic;
             color: var(--grey);
+        }
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        position: relative;
+    }
+    
+    .slick-dots {
+        position: absolute;
+        bottom: -30px;
+        left: 154px;
+
+        li {
+            margin: -5px;
         }
     }
 }
