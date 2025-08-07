@@ -26,8 +26,7 @@ function ConhecaMais() {
     return (
         <section className="conheca-mais">
             {blogPage.map((page) => (
-                <>
-                    <div>
+                    <div className="card">
                         <div className="fixo">
                             <h2>Conheça mais</h2>
                             <p>Fique por dentro de tudo o que acontece na Bebecê.</p>
@@ -40,7 +39,6 @@ function ConhecaMais() {
                         />
                         <div className="dots"></div>
                     </div>
-                </>
             ))}
         </section>
     )

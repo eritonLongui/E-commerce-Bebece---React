@@ -1,13 +1,31 @@
 .slider-produtos {
-    padding: 32px 16px 48px;
+    padding: 32px 0 48px;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
     gap: 10px;
 
+    > h2 {
+        margin-left: 16px;
+    }
+
     > div {
+        padding-left: 16px;
         display: flex;
         gap: 16px;
+        overflow-x: auto;
+
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    > div::-webkit-scrollbar {
+        display: none;
+    }
+
+    > div::after {
+        content: '';
+        flex: 0 0 0px;
     }
 
     .produto-card{

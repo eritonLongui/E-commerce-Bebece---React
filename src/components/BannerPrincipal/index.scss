@@ -3,7 +3,6 @@
 
     figure {
         width: 393px;
-        // overflow: hidden;
         display: flex;
 
         img {
@@ -11,11 +10,12 @@
         }
     }
 
-    div {
+    .conheca-agora {
         width: 150px;
         padding: 12px 24px;
         border: 1px solid white;
         background-color: rgba($color: #FFFFFF, $alpha: .2);
+        backdrop-filter: blur(5px);
         position: absolute;
         bottom: 32px;
         left: 20px;
@@ -24,6 +24,22 @@
              color: var(--white);
             font-size: 14px;
             font-weight: 400;
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 30px;
+        left: 154px;
+
+        li {
+            margin: -5px;
+
+        }
+        
+        button::before,
+        .slick-active button::before {
+        color: var(--white);
         }
     }
 }

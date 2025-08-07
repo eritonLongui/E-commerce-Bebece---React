@@ -3,7 +3,7 @@ import './index.scss';
 function StatusBar() {
     return (
         <div className='status-bar'>
-            <div>9:41</div>
+            <div><p>9:41</p></div>
             <div className="cam"></div>
             <div className="status">
                 <img src="./static/icons/mobile-signal.svg" />
