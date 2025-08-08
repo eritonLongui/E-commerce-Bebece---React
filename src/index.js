@@ -4,11 +4,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { GlobalStateProvider } from './context/GlobalStateContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
      <React.StrictMode>
-          <App />
+          <GlobalStateProvider>
+               <App />
+          </GlobalStateProvider>
      </React.StrictMode>
 );
 

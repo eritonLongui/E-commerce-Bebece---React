@@ -1,0 +1,25 @@
+.mensagem-carrinho {
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -120px);
+    width: 174px;
+    height: 40px;
+    padding: 12px 24px;
+    background-color: var(--dark);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+    z-index: 3;
+    
+    &.ativo {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 300;
+        color: var(--white);
+    }
+}

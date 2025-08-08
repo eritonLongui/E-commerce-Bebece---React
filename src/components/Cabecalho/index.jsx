@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import { useGlobalState } from '../../context/GlobalStateContext';
 import './index.scss';
 
 function Cabecalho() {
+    const { countCarrinho } = useGlobalState();
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -27,7 +29,7 @@ function Cabecalho() {
                     <img src="./static/icons/header/perfil-dark.svg" />
                     <div>
                         <img src="./static/icons/header/carrinho-dark.svg" />
-                        <p>0</p>
+                        <p>{countCarrinho}</p>
                     </div>
                 </nav>
             </> : <>
@@ -40,7 +42,7 @@ function Cabecalho() {
                     <img src="./static/icons/header/perfil.svg" />
                     <div>
                         <img src="./static/icons/header/carrinho.svg" />
-                        <p>0</p>
+                        <p>{countCarrinho}</p>
                     </div>
                 </nav>
             </>}
