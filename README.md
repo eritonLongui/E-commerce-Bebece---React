@@ -1,48 +1,39 @@
-# Instruções para Desenvolvimento
+# 🛍️ Loja Bebecê - Frontend
 
-Este projeto requer a recriação de uma página mobile baseada em um design fornecido no Figma. A pessoa responsável por este teste deve utilizar o arquivo fornecido no projeto para desenvolver a página conforme as especificações do design.
+Projeto desenvolvido para replicar a interface e funcionalidades de um e-commerce da marca **Bebecê**, na versão mobile, fiel ao Figma: https://www.figma.com/design/lAAailSNvI7cZQAllaYOgh/-Wecode--Vaga-Est%C3%A1gio-Desenvolvedor?node-id=0-1&p=f&t=RCtNgFlIzvvpjRWD-0.
 
-**Deixamos o ambiente parametrizado para desenvolvimento em React JS, mas caso se sinta mais confortável em desenvolver utilizando HMTL, CSS e JS poderá trabalhar desta forma criando a organizção das pastas. Desenvolver em React JS será apenas considerado um diferencial**
+## 🚀 Tecnologias utilizadas
+- **React.js** com Hooks
+- **Context API** para estado global
+- **Scss** para estilização
+- **GitHub Pages** para deploy
 
+## 📌 Funcionalidades
+- Menu lateral com animação de abertura e fechamento
+- Slider horizontal de categorias
+- Alteração do logo e cor de fundo do cabeçalho ao rolar a página
+- Botão "Adicionar ao carrinho" com pop-up temporário
+- Sistema de favoritos com alternância de ícone
+- Contador de itens no carrinho (estado global)
+- Navegação interna pela categoria "sapatos" com toggle
 
-## Datas e formulário
+## 🔧 Instalação e uso
 
-* O projeto deve ser entregue em até 7 dias após o recebimento do link [link](https://forms.gle/mGWLKX6WiHi9691o9)
+#### Clone o repositório
+git clone https://github.com/eritonLongui/E-commerce-Bebece---React
 
-### Figma Design
-O design a ser seguido está disponível no Figma no seguinte [link](https://www.figma.com/design/lAAailSNvI7cZQAllaYOgh/-Wecode--Vaga-Est%C3%A1gio-Desenvolvedor?t=MmZTkOhuVDXoGp30-0)
+#### Acesse a pasta
+cd E-commerce-Bebece---React
 
-
-### Ferramentas Utilizadas
-
-* React: O projeto deve ser desenvolvido utilizando React.
-* SCSS: Utilize SCSS para estilização dos componentes.
-
-### Estrutura do Projeto
-
-O projeto está estruturado da seguinte forma:
-
-* `src/`: Diretório contendo o código fonte do projeto.
-* `public/`: Diretório contendo arquivos estáticos como imagens. 
-* `README.md`: Este arquivo contendo as instruções para desenvolvimento.
-
-## Como Começar
-
-* Extraia este projeto para um diretório local.
-* Navegue até o diretório do projeto.
-* Instale as dependências do projeto utilizando `npm install`.
-* Execute o projeto localmente com `npm start`.
-
-## Desenvolvimento
-* Utilize o arquivo fornecido no projeto como referência para criar a página mobile.
-* Siga fielmente as especificações de design presentes no Figma.
-* Utilize SCSS para estilização dos componentes.
-* Mantenha o código limpo e bem organizado, seguindo as melhores práticas de desenvolvimento.
-
-### Slider
-
-Para o componente slider, você poderá utilizar a biblioteca que quiser. Sugerimos a utilização da biblioteca [react-slick](https://react-slick.neostack.com/).
-
-Para a composição do card de produtos no slider, deverá ser utilizado as informações retornantes da função `getProducts` presente no arquivo `/src/utils.js`.
+#### Instale as dependências
+npm install
 
 
+#### Rode o projeto
+npm run dev
+
+## 🌐 Deploy
+
+O projeto está disponível em:
+
+https://e-commerce-bebece-react.vercel.app/
