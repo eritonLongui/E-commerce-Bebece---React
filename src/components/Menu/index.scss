@@ -1,0 +1,118 @@
+.menu {
+    position: fixed;
+    top: 53px;
+    bottom: 0;
+    width: 331px;
+    background-color: var(--white);
+    z-index: 3;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.3s ease;
+
+    &.aberto {
+    transform: translateX(0);
+    opacity: 1;
+    }
+
+    header {
+        height: 56px;
+        width: 100%;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            width: 24px;
+            height: 24px;
+            padding: 8px;
+            background-color: #EEEEEE;
+            border: none;
+            display: flex;
+        }
+    }
+
+    figure {
+        width: 100%;
+        height: 120px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba($color: #000000, $alpha: .2);
+        }
+
+        .frame {
+            width: 300px;
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            z-index: 4;
+            display: flex;
+            justify-content: space-between;
+
+            h3 {
+                font-size: 14px;
+                font-weight: 600;
+                color: var(--white);
+                letter-spacing: .6px;
+            }
+
+            a {
+                font-size: 12px;
+                font-weight: 300;
+                color: var(--white);
+            }
+        }
+    }
+
+    nav {
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        p, a {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .list {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            > p {
+                margin: 0;
+            }
+        }
+
+        a {
+            color: var(--red);
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 12px;
+        }
+
+        li {
+            margin-top: 12px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}

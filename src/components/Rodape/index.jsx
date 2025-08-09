@@ -2,7 +2,7 @@ import './index.scss'
 
 function Rodape() {
     return (
-        <div className="rodape">
+        <footer className="rodape">
             <img src="./static/Logo-bege.svg" alt="Logo Bebecê" />
             <nav>
                 <a href="#"><img src="./static/icons/social/instagram.svg" alt="Instagram Bebecê" /></a>
@@ -23,7 +23,7 @@ function Rodape() {
                 <a href="#">Política de Entrega</a>
                 <a href="#">Política de Cumpom e Descontos</a>
             </div>
-        </div>
+        </footer>
     )
 }
 
